@@ -1,0 +1,23 @@
+
+Synchronization
+-----------------
+1.Object level lock
+2.Class level lock
+https://medium.com/@anil.java.story/you-dont-know-java-synchronized-keyword-612b176cc2d2
+
+Object level lock / Method level Synchronization
+--------------------------------------------------
+you can use method level synchronization or synchronization block then you have to pass "this" keyword or object,
+only one thread will allow to enter into block or method and data will be in consistent state.
+
+But
+
+multiple threads are operate on multiple instances then object level lock won't work because object level lock will be 
+applicable for single object , it can't control it if it's having multiple objects and multiple threads are operating 
+multiple instances then you have to use static method synchronization method or class level lock synchronization bloack.
+
+
+Class level Lock / Static level Synchronization
+-------------------------------------------------
+if you want to keep the data consistent by multiple threads are operated by the multiple instances/objects then 
+you have to use  static synchronization method or synchronization block with class level object.
